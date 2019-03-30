@@ -1,7 +1,7 @@
-# React/TypeScript/Express/Sass
+# React/TypeScript/Express
 This project is a starting point for a TypeScript based React app that also has a local API server using express.
 
-There are 2 different Webpack configurations. One for the server and one for the client.
+![alt text](https://i.imgur.com/QHpf0Xt.jpg)
 
 # React Router DOM integration with Typescript React
 
