@@ -1,6 +1,9 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './scss/app';
+import List from './List';
+import Detail from './Detail';
 
 export default class App extends React.Component<IAppProps, IAppState> {
 
@@ -19,8 +22,13 @@ export default class App extends React.Component<IAppProps, IAppState> {
     render () {
         return (
             <main className="container">
-                <h1 className="covalence-blue">Hello {this.state.name}!</h1>
-                <h2></h2>
+               <Router>
+                  <Switch>
+                    <Route exact path="/" component={List} />
+                    <Route path="/:name" component={Detail} />
+                  </Switch>
+               </Router>
+                
             </main>
         )
     }
